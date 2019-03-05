@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" id="Definitions_1kdevap" name="DRD" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="Zahlungsart" name="Zahlungsart">
+    <decisionTable id="decisionTable_1">
+      <input id="input_1" label="Anzahl Verfehlungen">
+        <inputExpression id="inputExpression_1" typeRef="long">
+          <text>anzahl</text>
+        </inputExpression>
+      </input>
+      <output id="output_1" label="Entscheidung" name="entscheidung" typeRef="string">
+        <outputValues id="UnaryTests_1k5mhex">
+          <text>"angenommen","abgelehnt"</text>
+        </outputValues>
+      </output>
+      <rule id="DecisionRule_0ljwu82">
+        <inputEntry id="UnaryTests_1659j0a">
+          <text>&gt; 3</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_14tf24s">
+          <text>"vorkasse"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1y17p5r">
+        <inputEntry id="UnaryTests_0f8o1ck">
+          <text>&lt; 3</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_08f2m1a">
+          <text>"rechnung"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

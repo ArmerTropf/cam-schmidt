@@ -1,0 +1,19 @@
+<form name="keinAusrechenderBestand">
+<H1>Artikelbestand nicht ausreichend:</H1>
+	<div class="form-group">
+		<label for="artikel">Artikel</label> 
+		<input class="form-control" cam-variable-type="String" cam-variable-name="artikel" name="artikel" disabled />
+	</div>
+	<div class="form-group">
+		<label for="menge">Menge</label>
+		<input class="form-control" cam-variable-type="String" cam-variable-name="menge" name="menge" disabled />
+	</div>
+		<div class="form-group">
+		<label for="vorhanden">Artikel/Menge neu wählen?</label> 
+		<!--  <input  type="checkbox" class="form-control" cam-variable-type="Boolean" cam-variable-name="vorhanden" name="vorhanden" /> -->
+		<select cam-variable-name="neu" cam-variable-type="Boolean">
+  			<option value="true">Ja</option>
+  			<option value="false">Nein</option>
+		</select>
+	</div>
+</form>

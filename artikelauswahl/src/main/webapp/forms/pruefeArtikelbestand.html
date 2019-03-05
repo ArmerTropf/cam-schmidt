@@ -1,0 +1,19 @@
+<form name="pruefeArtikelbestand">
+<H1>Artikelbestand prüfen:</H1>
+	<div class="form-group">
+		<label for="artikel">Artikel</label> 
+		<input class="form-control" cam-variable-type="String" cam-variable-name="artikel" name="artikel" />
+	</div>
+	<div class="form-group">
+		<label for="menge">Menge</label>
+		<input class="form-control" cam-variable-type="String" cam-variable-name="menge" name="menge">
+	</div>
+		<div class="form-group">
+		<label for="vorhanden">Artikel/Menge vorhanden?</label> 
+		<!--  <input  type="checkbox" class="form-control" cam-variable-type="Boolean" cam-variable-name="vorhanden" name="vorhanden" /> -->
+		<select cam-variable-name="vorhanden" cam-variable-type="Boolean">
+  			<option value="true">Ja</option>
+  			<option value="false">Nein</option>
+		</select>
+	</div>
+</form>
