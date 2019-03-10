@@ -9,8 +9,6 @@ public class ReserveStockObjectsDelegate implements JavaDelegate{
 	private static final Logger LOG = Logger.getLogger("Artikel");
 
 	public void execute(DelegateExecution execution) throws Exception {
-		LOG.info("Bestand reserviert");
-		
-		
+		LOG.info("Bestand reserviert");		
 	}
 }

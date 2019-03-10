@@ -9,5 +9,4 @@ public class WriteUserDBDelegate implements JavaDelegate {
 	public void execute(DelegateExecution execution) throws Exception {
 		LOG.info("Erstelle Account in DB: insert into Kundenstamm (kundenmail,rechnungsadresse,lieferadresse,land) values (\"" + execution.getVariable("kundenmail") +"\",\"" + execution.getVariable("rechnungsadresse")+ "\",\"" + execution.getVariable("lieferadresse") + "\",\"" + execution.getVariable("land") + "\");" );
 	}
-
 }

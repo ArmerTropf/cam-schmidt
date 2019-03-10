@@ -22,7 +22,7 @@
       </rule>
       <rule id="DecisionRule_1y17p5r">
         <inputEntry id="UnaryTests_0f8o1ck">
-          <text>&lt; 3</text>
+          <text>&lt;= 3</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_08f2m1a">
           <text>"rechnung"</text>

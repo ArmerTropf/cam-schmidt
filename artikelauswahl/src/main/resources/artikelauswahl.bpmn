@@ -155,7 +155,7 @@
     <bpmn:userTask id="Task_1xstx1e" name="Rechnungsinformation pflegen" camunda:assignee="kunde">
       <bpmn:extensionElements>
         <camunda:formData>
-          <camunda:formField id="angezeigt" label="Rechnungsinformationen angezeigt?" type="boolean" />
+          <camunda:formField id="angezeigt" label="Rechnungsinformationen angezeigt(Rechnung)?" type="boolean" />
         </camunda:formData>
       </bpmn:extensionElements>
       <bpmn:incoming>SequenceFlow_133mq8e</bpmn:incoming>
@@ -196,7 +196,7 @@
     <bpmn:userTask id="Task_03wm9ov" name="Zahlung ausführen" camunda:assignee="kunde">
       <bpmn:extensionElements>
         <camunda:formData>
-          <camunda:formField id="zahlung_ok" label="Wurde die Zahlung ausgeführt:" type="boolean" />
+          <camunda:formField id="zahlung_ok" label="Wurde die Zahlung ausgeführt(Vorkasse):" type="boolean" />
         </camunda:formData>
       </bpmn:extensionElements>
       <bpmn:incoming>SequenceFlow_1pwcs1c</bpmn:incoming>
@@ -556,18 +556,19 @@
         <di:waypoint x="913" y="338" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="EndEvent_0r9ayag_di" bpmnElement="EndEvent_0r9ayag">
-        <dc:Bounds x="2010" y="637" width="36" height="36" />
+        <dc:Bounds x="2357" y="196" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="SequenceFlow_0qxnt20_di" bpmnElement="SequenceFlow_0qxnt20">
-        <di:waypoint x="2028" y="454" />
-        <di:waypoint x="2028" y="520" />
+        <di:waypoint x="2287" y="319" />
+        <di:waypoint x="2287" y="287" />
+        <di:waypoint x="2287" y="254" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="SequenceFlow_1nbmhbb_di" bpmnElement="SequenceFlow_1nbmhbb">
-        <di:waypoint x="2028" y="600" />
-        <di:waypoint x="2028" y="637" />
+        <di:waypoint x="2337" y="214" />
+        <di:waypoint x="2357" y="214" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="ServiceTask_0w00nbe_di" bpmnElement="Task_1ar7byp">
-        <dc:Bounds x="1978" y="520" width="100" height="80" />
+        <dc:Bounds x="2237" y="174" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Task_05t899g_di" bpmnElement="Task_088d26w">
         <dc:Bounds x="1773" y="354" width="100" height="80" />
